@@ -1,5 +1,5 @@
 const layoutSettings = {
-  minWidth: '600px',
+//   minWidth: '600px',
   panelClass: 'panel',
   panelCollapsedClass: 'collapsed',
   panelHeaderClass: 'panel',
