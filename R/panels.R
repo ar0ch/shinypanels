@@ -62,7 +62,7 @@ panel <- function(head = NULL, body = NULL, footer = NULL,
     can_collapse <- NULL
   }
 
-  div(class = glue("{class1} col-sm-{width}")
+  div(class = glue("{class1} col-sm-{width}"),
       style = style1,
       id=id,
       div(class="panel-header", id = id_head,
