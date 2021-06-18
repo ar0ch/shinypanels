@@ -19,7 +19,7 @@
 #' @export
 panel <- function(head = NULL, body = NULL, footer = NULL,
                   title = NULL, title_plugin = NULL, color = "malibu",
-                  id = NULL, collapsed = FALSE, can_collapse = TRUE, width = NULL,
+                  id = NULL, collapsed = FALSE, can_collapse = TRUE, class = NULL,
                   ...){
   collapsed <- ifelse(collapsed, "collapsed", "")
   if(is.null(title)) stop("Need panel title")
@@ -62,7 +62,7 @@ panel <- function(head = NULL, body = NULL, footer = NULL,
     can_collapse <- NULL
   }
 
-  div(class = glue("{class1} col-sm-{width}"),
+  div(class = glue("{class1} {class}"),
       style = style1,
       id=id,
       div(class="panel-header", id = id_head,
