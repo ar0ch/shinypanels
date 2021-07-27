@@ -62,7 +62,7 @@ panelsPage <- function(..., styles = "", header = NULL, title = NULL, debug = FA
         svgRotate()
       ),
     ),
-    div(class = "layout-container hidden-xs",
+    div(class = "layout-container",
        header,
         div(class = "layout-panels",
             div(class="app-container",

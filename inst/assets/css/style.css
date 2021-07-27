@@ -153,6 +153,7 @@ hr {
   padding: 1rem;
   width: auto;
   writing-mode: vertical-lr;
+  max-height: 605px;
 }
 
 .panel.collapsed .panel-header {
