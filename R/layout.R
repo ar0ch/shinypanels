@@ -58,11 +58,11 @@ panelsPage <- function(..., styles = "", header = NULL, title = NULL, debug = FA
     ),
     div(class = "orientation-notice",
       div(class="orientation-notice-content",
-        p('Gira tu dispositivo', style = "text-align: center;"),
+        p('Rotate to landscape', style = "text-align: center;"),
         svgRotate()
       ),
     ),
-    div(class = "layout-container",
+    div(class = "layout-container hidden-xs",
        header,
         div(class = "layout-panels",
             div(class="app-container",

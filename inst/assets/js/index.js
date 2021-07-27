@@ -30,7 +30,6 @@ function setPanelWidth(panel, reset) {
       panel.style['flex-grow'] = '0';
       panel.style['min-width'] = '0';
     }
-    panel.style.width = 'auto';
   }
 }
 
@@ -58,6 +57,7 @@ for (let button of dismiss) {
     const panel = this.parentNode.parentNode;
     if (!panel.classList.contains(layoutSettings.panelCollapsedClass)) {
       setPanelWidth(panel, true);
+      $(this).trigger("shown");
     } else {
       setPanelWidth(panel);
     }
